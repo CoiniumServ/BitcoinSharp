@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinSharp.Core", "Core\BitCoinSharp.Core.csproj", "{82B20619-3469-4DB6-8D18-628B64842499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinSharp.Examples", "Examples\BitCoinSharp.Examples.csproj", "{EC3DD824-1552-4D40-B1E0-D2827C95C1AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinSharp.Test", "Test\BitCoinSharp.Test.csproj", "{1F699CA0-3353-488F-BA48-26D82B287F2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82B20619-3469-4DB6-8D18-628B64842499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B20619-3469-4DB6-8D18-628B64842499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B20619-3469-4DB6-8D18-628B64842499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B20619-3469-4DB6-8D18-628B64842499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3DD824-1552-4D40-B1E0-D2827C95C1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3DD824-1552-4D40-B1E0-D2827C95C1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3DD824-1552-4D40-B1E0-D2827C95C1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3DD824-1552-4D40-B1E0-D2827C95C1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F699CA0-3353-488F-BA48-26D82B287F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F699CA0-3353-488F-BA48-26D82B287F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F699CA0-3353-488F-BA48-26D82B287F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F699CA0-3353-488F-BA48-26D82B287F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

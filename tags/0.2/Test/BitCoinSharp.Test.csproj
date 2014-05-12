@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F699CA0-3353-488F-BA48-26D82B287F2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BitCoinSharp.Test</RootNamespace>
+    <AssemblyName>BitCoinSharp.Test</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\BitCoinSharp.Core.csproj">
+      <Project>{82B20619-3469-4DB6-8D18-628B64842499}</Project>
+      <Name>BitCoinSharp.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressTest.cs" />
+    <Compile Include="Base58Test.cs" />
+    <Compile Include="BitcoinSerializerTest.cs" />
+    <Compile Include="BlockChainTest.cs" />
+    <Compile Include="BlockTest.cs" />
+    <Compile Include="BoundedOverheadBlockStoreTest.cs" />
+    <Compile Include="ChainSplitTests.cs" />
+    <Compile Include="DiskBlockStoreTest.cs" />
+    <Compile Include="EcKeyTest.cs" />
+    <Compile Include="IrcDiscoveryTest.cs" />
+    <Compile Include="PeerAddressTest.cs" />
+    <Compile Include="ScriptTest.cs" />
+    <Compile Include="SeedPeersTest.cs" />
+    <Compile Include="UtilsTest.cs" />
+    <Compile Include="VarIntTest.cs" />
+    <Compile Include="WalletTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
